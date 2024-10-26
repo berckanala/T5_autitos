@@ -1,0 +1,143 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage[bottom=2.5cm, top=2.5cm, right=2cm, left=3cm]{geometry}
+\usepackage[spanish, es-tabla]{babel}
+\usepackage{graphicx} 
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{natbib}
+\usepackage{float}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{parskip} 
+\usepackage{fancyhdr} % Paquete para personalizar encabezados y pies de página
+\usepackage{microtype}  % Mejora la justificación del texto
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+    urlcolor=blue
+}
+
+% Configuración del encabezado
+\pagestyle{fancy}
+\fancyhf{} % Limpia los encabezados y pies de página actuales
+\fancyhead[R]{\thepage} % Coloca el número de página en la parte superior derecha
+\renewcommand{\headrulewidth}{0pt} % Elimina la línea horizontal en la parte superior de la página
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        
+    
+    \vspace*{1cm}
+
+
+    \textbf{\Large Tarea 5: Asignación}
+  
+    \vspace{1cm}
+    
+    \textbf{Bernardo Caprile Canala-Echevarría}\\
+    Facultad de Ingeniería y Ciencias Aplicadas, Universidad de los Andes, Santiago de Chile\\
+    e-mail: \href{mailto:bcaprile@miuandes.cl}{bcaprile@miuandes.cl}\\
+    GitHub: \href{https://github.com/LukasWolff2002/TAREA_4_AUTITOS}{Repositorio}
+    \vspace{2cm}
+    
+    
+    \end{center}
+    Se realizaron cinco ejercicios aplicando el principio de equilibrio de Wardrop, que establece que en una red, los usuarios distribuyen sus rutas de forma que los costos sean iguales para todas las rutas utilizadas, alcanzando así el equilibrio. En cada ejercicio, se calcularon los flujos y costos asociados a diferentes configuraciones de rutas.
+    
+\end{titlepage}
+
+\newpage
+\section{Resultados}
+\subsection{Problema 1}
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|}
+    \hline
+    \textbf{Variable} & \textbf{Valor} \\ \hline
+    Ruta 1 (h+10)           & 6.1173         \\ \hline
+    Ruta 2 (2*h+12)           & 2.0587         \\ \hline
+    $C1$              & 16.1173        \\ \hline
+    $C2$              & 16.1173        \\ \hline
+    \end{tabular}
+    \caption{Resultados para P1}
+\end{table}
+    
+\subsection{Problema 2}
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|}
+    \hline
+    \textbf{Variable} & \textbf{Valor} \\ \hline
+    Ruta 1 (h+10)     & 5.6704         \\ \hline
+    Ruta 2 (2*h+12)   & 1.8352         \\ \hline
+    Ruta 3 (h+15)            & 0.6704         \\ \hline
+    $C1$              & 15.6704        \\ \hline
+    $C2$              & 15.6704        \\ \hline
+    $C3$              & 15.6704        \\ \hline
+    \end{tabular}
+    \caption{Resultados para P2}
+\end{table}
+
+\subsection{Problema 3}
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|}
+    \hline
+    \textbf{Variable} & \textbf{Valor} \\ \hline
+    Ruta 1 (h+10)     & 3.4507         \\ \hline
+    Ruta 2 (2*h+12)   & 0.7253         \\ \hline
+    $C1$              & 13.4507        \\ \hline
+    $C2$              & 13.4507        \\ \hline
+    \end{tabular}
+    \caption{Resultados para P3 (ruta $h+15$ no se ocupa)}
+\end{table}
+
+\newpage
+\subsubsection{Problema 4}
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|}
+    \hline
+    \textbf{Variable} & \textbf{Valor} \\ \hline
+    a            & 9.5880         \\ \hline
+    b            & 2.6985         \\ \hline
+    c            & 5.1910         \\ \hline
+    d            & 2.6985         \\ \hline
+    e           & 2.4925         \\ \hline
+    g            & 2.4925         \\ \hline
+    $C1$              & 23.5880        \\ \hline
+    $C2$              & 23.5880        \\ \hline
+    $C3$              & 23.1760        \\ \hline
+    \end{tabular}
+    \caption{Resultados para P4}
+\end{table}
+
+\subsection{Problema 5}
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|}
+    \hline
+    \textbf{Variable} & \textbf{Valor} \\ \hline
+    a            & 33.1086        \\ \hline
+    b            & 66.2171        \\ \hline
+    c            & 72.7714        \\ \hline
+    d            & 23.1086        \\ \hline
+    g            & 56.2171        \\ \hline
+    i            & 23.1086        \\ \hline
+    j            & 6.5543         \\ \hline
+    $C1$              & 10.9326        \\ \hline
+    $C2$              & 10.9326        \\ \hline
+    $C3$              & 10.9326        \\ \hline
+    $C4$              & 9.2771         \\ \hline
+    $C5$              & 9.2771         \\ \hline
+    $C6$              & 9.2771        \\ \hline
+    \end{tabular}
+    \caption{Resultados para P5}
+    \end{table}
+    
+
+\end{document}
